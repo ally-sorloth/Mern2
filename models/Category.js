@@ -13,6 +13,8 @@ const schema = new Schema({
     description: {
         type: String,
     },
+    products: [{type:Schema.Types.ObjectId, ref:'Products'}],
+    
     deletedAt: {
         type: Date,
     }
